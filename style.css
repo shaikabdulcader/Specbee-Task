@@ -192,10 +192,22 @@ body {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
+  .wrapper i:first-child{
+    left: -40px;
+  }
+  .wrapper i:last-child{
+    right: -40px;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
+  }
+  .wrapper i:first-child{
+    left: -35px;
+  }
+  .wrapper i:last-child{
+    right: -35px;
   }
 }
