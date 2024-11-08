@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Infinite Card Slider with Modal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="heading-section">
+    <h1>View our Featured Speakers for the Event</h1>
+    <p>Speakers are core contributors and industry thought leaders working at <span style="color: blue;">company</span> that push for innovation</p>
+  </div>
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <ul class="carousel">
+      <li class="card" data-name="Aakansha Doshi" data-title="Open source maintainer" data-description="Aakansha is passionate about Free and open-source software (FOSS) and loves deep diving into the internals of Web and Javascript. She is a core maintainer of excalidraw, react-tags, mermaid-to-excalidraw, and more libraries. Beyond her tech interests, she is a big foodie, loves traveling, and spending quality time with her family.">
+        <div class="img"><img src="assets//images//https___media.graphassets.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Adam Larter" data-title="CTO, Affinidi" data-description="Adam Larter is the Chief Technology Officer (CTO) of Affinidi, a technology company with a mission to change data ownership for good. As CTO, Adam oversees the progress and development of decentralised technology that will pave the way for the next generation of digital identity. His focus lies in establishing end-to-end trust in data, fostering a privacy-preserving and enriching data exchange experiences">
+        <div class="img"><img src="assets//images/https___media.graphassets (1).jpeg" alt="img" draggable="false"></div>
+        <h2>Adam Larter</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Alok Kumar" data-title="Senior Software Engineer, Epam" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.3.jpeg" alt="img" draggable="false"></div>
+        <h2>Alok Kumar</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Amit Batra" data-title="Lead Engineer" data-description="Hi I am Amit, working as Frontend Lead at Brevo, passionate about developing high-performant applications on the web and mobile.">
+        <div class="img"><img src="assets//images/img.4.png" alt="img" draggable="false"></div>
+        <h2>Amit Batra</h2>
+        <p>Lead Engineer</p>
+        <span>LinkedIn</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.5.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.6.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.7.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.8.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.9.png" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <li class="card" data-name="Blanche Pearson" data-title="Sales Manager" data-description="Detailed description about Blanche Pearson.">
+        <div class="img"><img src="assets//images/img.10.jpeg" alt="img" draggable="false"></div>
+        <h2>Aakansha Doshi</h2>
+        <p>Open source maintainer</p>
+        <span>Tweeter</span>
+      </li>
+      <!-- Add more cards as needed -->
+    </ul>
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+  <button class="btn">See the Program</button>
+
+  <!-- Modal Structure -->
+  <div id="profileModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="modal-profile">
+        <div class="profile-img">
+          <img src="images/img-1.jpg" alt="Profile Picture" id="modalImage">
+        </div>
+        <div class="profile-info">
+          <h2 id="modalName">Name</h2>
+          <h4 id="modalTitle">Title</h4>
+        </div>
+      </div>
+      <div class="modal-description">
+        <p id="modalDescription">Description</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
